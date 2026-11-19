@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open Shed · integrated practice game</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.mjs"></script></head>
+<body><main><header><p class="eyebrow">SESSIONS 4 + 7 · LOCAL PRACTICE</p><h1>Open Shed: game + Coach</h1>
+<p class="boundary">Real pinned game engine · two invented hot-seat players · scripted Coach, not a model</p></header>
+<p id="feedback" role="alert">Connecting to your local game…</p>
+<canvas id="board" width="1000" height="220" aria-label="Game board summary. Equivalent game information is printed below."></canvas>
+<div class="columns"><section aria-labelledby="game-title"><h2 id="game-title">Play without AI</h2>
+<p>One person controls both invented seats. The engine deals, validates moves and changes turns.</p>
+<dl><dt>Turn</dt><dd id="turn">—</dd><dt>Discard / active colour</dt><dd id="discard">—</dd><dt>Revision / reset epoch</dt><dd id="revision">—</dd><dt>Hand counts</dt><dd id="counts">—</dd><dt>Moves actually executed</dt><dd id="moves">0</dd></dl>
+<h3>Current player's hand</h3><p>Enabled cards come from the engine's legal-action projection.</p><div id="hand" class="hand"></div>
+<label for="color">Colour choice for Wild / roulette</label><select id="color"><option value="red">Red</option><option value="yellow">Yellow</option><option value="green">Green</option><option value="blue">Blue</option></select>
+<div class="buttons"><button id="draw">Draw until playable</button><button id="penalty">Accept penalty</button><button id="roulette">Choose roulette colour</button><button id="uno">Declare UNO</button></div>
+<p class="note">Manual card clicks declare UNO when applicable. A seven swaps with the other invented seat; a zero rotates hands. There are no bots or remote players.</p>
+<button id="reset" class="secondary">Reset this local game</button></section>
+<section aria-labelledby="coach-title"><h2 id="coach-title">Ask, review, decide</h2><p>Asking cannot play a card. Only an explicit approval can apply the exact stored proposal, after fresh engine validation.</p>
+<label for="script">Scripted provider case</label><select id="script"><option value="allowed">Legal option</option><option value="malformed">Malformed response</option><option value="illegal">Unpermitted option</option><option value="failure">Provider failure</option><option value="timeout">Provider timeout</option><option value="off">Coach off</option></select>
+<button id="ask">Ask scripted Coach</button>
+<div class="result" role="status" aria-live="polite"><h3 id="coach-status">idle</h3><p id="coach-message"></p><p id="coach-reason"></p><p id="citation"></p></div>
+<h3>Exact proposed action</h3><pre id="proposal">No proposal.</pre>
+<label class="check"><input type="checkbox" id="acknowledge"> I reviewed this exact card and its colour/swap choices.</label>
+<div class="buttons"><button id="approve" disabled>Approve exact move</button><button id="reject" class="secondary" disabled>Reject proposal</button></div>
+<p id="approval-hint">The Session 7 starter deliberately blocks approval until its small review-gate repair.</p>
+<p class="note">Approvals expire after 30 seconds. A manual move or reset makes an older proposal stale. Server checks remain active even if browser code is changed.</p>
+<h3>Sanitised local audit</h3><pre id="audit">[]</pre></section></div>
+<footer>Apache-2.0 engine: f20a5c15bfb2b1aa943f61f8b17bcbd27f185c40. Local practice only: no hosted identity, persistence, API keys or provider spend.</footer></main></body></html>

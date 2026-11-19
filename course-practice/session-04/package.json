@@ -1,0 +1,13 @@
+{
+  "name": "open-shed-integrated-game-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22.14.0" },
+  "scripts": {
+    "start": "node server.mjs",
+    "check:setup": "node scripts/check-setup.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:practice": "node --test practice/*.test.mjs"
+  }
+}

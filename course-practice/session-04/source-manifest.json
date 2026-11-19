@@ -1,0 +1,43 @@
+{
+  "edition": "open-shed-integrated-game-v1",
+  "upstreamCommit": "f20a5c15bfb2b1aa943f61f8b17bcbd27f185c40",
+  "license": "Apache-2.0",
+  "compiler": "5.9.3",
+  "transform": "TypeScript erasure plus relative .mjs import suffixes; no intentional rule edits",
+  "engine": {
+    "types": {
+      "originalSha256": "a6e173dbb65097b9220d43dd67149b090e7878d9d9863d2b16295a468ffbeee8",
+      "runtimeSha256": "31873b5429c32a2d068736735eb65bf7746ba73bdee2a203575507baed521de3"
+    },
+    "errors": {
+      "originalSha256": "4d09abf2032f1d60f400083704bd6ac87499dbae345cafddf593c65adf74f208",
+      "runtimeSha256": "007d3f6da545644e9fab97c3d346673a368063ecb55e9195498ac861a43065b5"
+    },
+    "random": {
+      "originalSha256": "e22f65d8e88279dcc6adfd507e32598c9402bf324a1d42962dee83495c673f25",
+      "runtimeSha256": "ccec08f6abeb73b1aacb12445ef065e7a1b628d9ee052dba4d0e3174eaa09426"
+    },
+    "deck": {
+      "originalSha256": "71c28023fa41c1188a33aa68a1afe179a216a290fd69fdc6f93c39f634f26ec1",
+      "runtimeSha256": "60df794102f57d113b889259280ed466f3bf515b85d460788e92a4819aa85134"
+    },
+    "invariants": {
+      "originalSha256": "fcbffba79e4a7b1a20ab9311d5a3d9e58d51d2a81b26ec6ded58ee7aabaf5211",
+      "runtimeSha256": "ff7c7c2afbe61ca24ec4c14d6c8083949aa1fedee614c843eafdea770d2c3a85"
+    },
+    "engine": {
+      "originalSha256": "ecc0ad7b186cef6bacd8353b2c40c834ce02363e5003cf11921c61667ab83904",
+      "runtimeSha256": "e7703b638595aab2ddeaaafd88e33610874b78f7cd79a842d006831d4b52dd3c"
+    },
+    "projection": {
+      "originalSha256": "fd030ed0d0706fb6026fccf8657891328e164a8ec0d99414cd9e4c4923505730",
+      "runtimeSha256": "097b4109c12fce4f2fe17265481a893526e09bc2502a1482f7d49f50fc4b1074"
+    }
+  },
+  "coach": {
+    "contracts": "cb44ae1079d85e0dfe897b6002d036c70745feed655df965a9b4484ca75ec6aa",
+    "fixtures": "1865aa826ef5ef9c5d65b74be827e7eb3c4fd28c1bd3a4893ae1d1687e175def",
+    "provider": "643e3dacf2dfaa4c6c9eb9f0b18da81295badfb30add3bc2400d65b8cc3e324b",
+    "tools": "09e348700616bb379d80c32d17c740eab47281a58f1586930997e31045b23995"
+  }
+}
